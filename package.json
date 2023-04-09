@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-angular": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "husky": "^8.0.1",
+    "sass-loader": "^13.0.2"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "dependencies": {
+    "@antv/g6": "^4.7.10",
+    "@antv/x6-react-components": "^1.1.15",
+    "insert-css": "^2.0.0",
+    "v-fit-columns": "^0.2.0"
+  }
+}

@@ -1,0 +1,5 @@
+FROM nginx
+COPY ./web/dist /usr/share/nginx/html/
+COPY docker/ngnix/develop.conf /etc/ngix/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
